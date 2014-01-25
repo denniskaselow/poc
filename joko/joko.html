@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="joko.css">
+    <title>joko</title>
+  </head>
+ 
+  <body>   
+    <fieldset>
+      <legend>Konfiguration</legend>
+      <label>Schriftgröße:
+        <select id="size"'>
+          <option value="10">10px</option>
+          <option value="12">12px</option>
+          <option value="14" selected>14px</option>
+          <option value="18">18px</option>
+          <option value="30">30px</option>
+        </select>
+      </label>
+      <label>max. Breite:
+        <select id="lineLength" value='200'>
+          <option value="100">100px</option>
+          <option value="200" selected>200px</option>
+          <option value="300">300px</option>
+          <option value="400">400px</option>
+        </select>
+      </label>
+      <label>Inhalt: <input id='content' value='Anderer Text' /></label>
+    </fieldset>
+    <div id='container' style='width:200px'>
+      <div>Text Text Text und noch mehr Text. Text Text Text und noch mehr Text. Text Text Text und noch mehr Text.</div>
+      <canvas></canvas>
+      <div>Text Text Text und noch mehr Text. Text Text Text und noch mehr Text. Text Text Text und noch mehr Text.</div>
+    </div>
+    <script type="application/dart" src="joko.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
