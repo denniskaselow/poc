@@ -1,0 +1,12 @@
+body {
+  font-family: 'Verdana';
+  font-size: 14px;
+}
+
+label {
+  display: block;
+}
+
+div#container {
+  border: 1px solid black;
+}
